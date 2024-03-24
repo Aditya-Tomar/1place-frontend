@@ -20,8 +20,9 @@ function App() {
         borderColor="#eeeeee" // Custom border color
         textColor="#000000" // Custom text color
         onClick={handleButtonClick} // Pass the event handler function
+        icon={""}
+        text={"New Link"}
       >
-        Add
       </Button>
         <p>
           Edit <code>src/App.js</code> and save to reload.
