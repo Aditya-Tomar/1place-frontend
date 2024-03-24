@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import './icomoon/style.css'
+
 import Button from './components/button';
 
 const handleButtonClick = () => {
   // Handle button click event
   console.log('Button clicked');
 };
+
 
 function App() {
   return (
@@ -18,7 +21,7 @@ function App() {
         textColor="#000000" // Custom text color
         onClick={handleButtonClick} // Pass the event handler function
       >
-        Add Link
+        Add
       </Button>
         <p>
           Edit <code>src/App.js</code> and save to reload.
