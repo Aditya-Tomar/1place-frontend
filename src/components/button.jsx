@@ -18,7 +18,7 @@ const Button = ({ backgroundColor, borderColor, textColor, icon, text, onClick }
 
   return (
     <button style={buttonStyle} onClick={onClick}>
-      {icon && <span className="icon">{icon}</span>}
+      {icon && <span className={`icon ${icon}`} />}
       {text && <span className="text">{text}</span>}
     </button>
   );

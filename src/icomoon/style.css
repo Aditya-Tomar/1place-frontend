@@ -55,3 +55,26 @@
 .icon-youtube:before {
   content: "\ea9d";
 }
+.bio-input {
+  position: relative;
+}
+
+.bio-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #525252;
+  border-radius: 8px;
+  font-size: 16px;
+  max-lines: 8;
+  transition: border-color 0.3s ease;
+}
+
+.bio-input input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.bio-input input.focused {
+  border-color: #007bff;
+}
+
