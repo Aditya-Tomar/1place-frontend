@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import './icomoon/style.css'
-
+import DraggableBox from './components/DraggableBox/DraggableBox';
+import LinkItem from './components/LinkItem/LinkItem';
+import LinkItemList from './components/LinkItemList/LinkItemList';
+import CreateLinkPage from './pages/createLinkPage/index';
 import Button from './components/button';
 
 const handleButtonClick = () => {
@@ -13,9 +16,14 @@ const handleButtonClick = () => {
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Button
+      <CreateLinkPage>
+
+      </CreateLinkPage>
+      {/* <LinkItemList > */}
+       
+      {/* </LinkItemList> */}
+    
+      {/* <Button
         backgroundColor="#ebf5ff" // Custom background color
         borderColor="#eeeeee" // Custom border color
         textColor="#000000" // Custom text color
@@ -23,19 +31,7 @@ function App() {
         icon={""}
         text={"New Link"}
       >
-      </Button>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </Button> */}
     </div>
   );
 }
