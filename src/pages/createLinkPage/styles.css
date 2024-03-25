@@ -1,0 +1,28 @@
+.create-page-link-main-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.create-page-link-left-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+}
+
+
+.create-page-link-right-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+}
+
+.newlink-layer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.drapdrop-box {
+    padding: 10px;
+}
