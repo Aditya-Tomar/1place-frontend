@@ -1,20 +1,31 @@
 
+import './styles.css';
 import DraggableBox from '../../components/DraggableBox/DraggableBox';
 import LinkItem from '../../components/LinkItem/LinkItem';
 import Button from '../../components/button';
-import './styles.css';
+import UserProfile from '../../components/UserProfile';
 // [
 //     { id:'k-1', itemValue: "firstText", itemLink: 'https://www.google.comomm'},
 //     { id:'k-2', itemValue: "secondtText", itemLink: 'https://www.google.comm'}
 //   ]
+
 function CreateLinkPage() {
+
+const onSaveDetails = (name, bio) => {
+    console.log('Button clicked', name, bio);
+  }
+  
+  
     return <div className="create-page-link-main-wrapper">
         <div className="create-page-link-left-wrapper">
         <div>
             <div>
-                <img></img>
-                <div>Name</div>
-                <input value="hahah"></input>
+            <UserProfile
+                profilePicture="https://res.cloudinary.com/stealthman22/image/upload/v1586308023/new-portfolio/hero/two-cargo-ships-sailing-near-city-2144905.jpg" // Replace with URL or path to profile picture
+                username="JohnDoe" // Replace with username
+                bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit." // Replace with bio
+                onSave={onSaveDetails}
+            />
             </div>
         </div>
         <div className="newlink-layer-wrapper">
