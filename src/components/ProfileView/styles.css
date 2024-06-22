@@ -1,0 +1,36 @@
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.profile-wrapper {
+    height: 85%;
+    block-size: 72%;
+    max-width: 500px;
+    width: 500px;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    background-image: url("../../../public//Merchandise.jpg");
+    background-size: contain;
+}
+
+.user-link {
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #b7b7b7; */
+    border-radius: 20px;
+    background-color: #2b373d;
+    width: 100%;
+
+}
